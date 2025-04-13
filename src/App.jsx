@@ -18,7 +18,7 @@ function App() {
   const [selectedImage, setSelectedImage] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const accessKey = import.meta.env.VITE_UNSPLASH_ACCESS_KEY;
+  const accessKey = "s-R5C8EPRG31QJ0SRVCwygDuymSO7okzvddIcXecfe8";
 
   useEffect(() => {
     if (!query) return;
