@@ -1,5 +1,6 @@
 import Modal from "react-modal";
 import styles from "./ImageModale.module.css";
+import { IoIosCloseCircleOutline } from "react-icons/io";
 
 function ImageModal({ isOpen, onRequestClose, image }) {
   if (!image) return null;
@@ -32,7 +33,7 @@ function ImageModal({ isOpen, onRequestClose, image }) {
         )}
       </div>
       <button onClick={onRequestClose} className={styles.closeButton}>
-        Close
+        <IoIosCloseCircleOutline size={35} />
       </button>
     </Modal>
   );

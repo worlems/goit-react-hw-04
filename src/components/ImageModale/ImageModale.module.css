@@ -4,30 +4,29 @@
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgb(37, 23, 23);
-
   border-radius: 8px;
-  max-width: 80%;
-  max-height: 80%;
-  overflow: auto;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 70vw;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
   overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .image {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  min-height: 0;
 }
 
 .info {
-  position: absolute;
-  bottom: 40px;
-  left: 25px;
-  padding: 5px;
-  border-radius: 10px;
-  backdrop-filter: blur(5px);
-  background: rgba(255, 255, 255, 0.1);
-  max-width: 95%;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .info p {
@@ -45,6 +44,7 @@
 .closeButton {
   position: absolute;
   top: 20px;
+  color: white;
   right: 20px;
   background-color: transparent;
   border: none;

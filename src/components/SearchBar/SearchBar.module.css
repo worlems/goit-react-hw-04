@@ -1,5 +1,5 @@
 .header {
-  background-color: #3f51b5;
+  background-color: #9bacfc;
   padding: 20px;
   color: white;
   text-align: center;
@@ -22,12 +22,14 @@
 .button {
   padding: 10px 20px;
   border: none;
-  background-color: #303f9f;
+
+  background-color: #253c86;
   color: white;
   border-radius: 0 4px 4px 0;
   cursor: pointer;
+  padding-left: 10px;
 }
 
 .button:hover {
-  background-color: #283593;
+  background-color: #08306b;
 }

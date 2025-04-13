@@ -1,6 +1,7 @@
 import { useState } from "react";
 import toast from "react-hot-toast";
 import styles from "./SearchBar.module.css";
+import { BsSearch } from "react-icons/bs";
 
 function SearchBar({ onSubmit }) {
   const [query, setQuery] = useState("");
@@ -32,7 +33,7 @@ function SearchBar({ onSubmit }) {
           className={styles.input}
         />
         <button type="submit" className={styles.button}>
-          Search
+          <BsSearch />
         </button>
       </form>
     </header>
