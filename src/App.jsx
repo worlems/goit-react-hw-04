@@ -18,7 +18,7 @@ function App() {
   const [selectedImage, setSelectedImage] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const accessKey = "s-R5C8EPRG31QJ0SRVCwygDuymSO7okzvddIcXecfe8";
+  const accessKey = import.meta.env.VITE_UNSPLASH_ACCESS_KEY;
 
   useEffect(() => {
     if (!query) return;
@@ -36,6 +36,7 @@ function App() {
               page,
               per_page: 12,
               client_id: accessKey,
+              orientation: "landscape",
             },
           }
         );
