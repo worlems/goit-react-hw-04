@@ -19,7 +19,6 @@ function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const accessKey = import.meta.env.VITE_UNSPLASH_ACCESS_KEY;
-
   useEffect(() => {
     if (!query) return;
 
